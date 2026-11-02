@@ -1,0 +1,16 @@
+C:\TareaSemana3_Nombramientos_Codigo\bin\Debug\net8.0\TareaSemana3.Nombramientos.exe
+C:\TareaSemana3_Nombramientos_Codigo\bin\Debug\net8.0\TareaSemana3.Nombramientos.deps.json
+C:\TareaSemana3_Nombramientos_Codigo\bin\Debug\net8.0\TareaSemana3.Nombramientos.runtimeconfig.json
+C:\TareaSemana3_Nombramientos_Codigo\bin\Debug\net8.0\TareaSemana3.Nombramientos.runtimeconfig.dev.json
+C:\TareaSemana3_Nombramientos_Codigo\bin\Debug\net8.0\TareaSemana3.Nombramientos.dll
+C:\TareaSemana3_Nombramientos_Codigo\bin\Debug\net8.0\TareaSemana3.Nombramientos.pdb
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.GeneratedMSBuildEditorConfig.editorconfig
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.AssemblyInfoInputs.cache
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.AssemblyInfo.cs
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.csproj.CoreCompileInputs.cache
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.dll
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\refint\TareaSemana3.Nombramientos.dll
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.pdb
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSemana3.Nombramientos.genruntimeconfig.cache
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\ref\TareaSemana3.Nombramientos.dll
+C:\TareaSemana3_Nombramientos_Codigo\obj\Debug\net8.0\TareaSem.2F7A27BB.Up2Date

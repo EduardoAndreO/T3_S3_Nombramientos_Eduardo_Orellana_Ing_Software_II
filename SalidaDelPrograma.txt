@@ -1,0 +1,99 @@
+
+==================================================
+ DEMO 1: PREFIJOS Y MIEMBROS
+==================================================
+--- VERSIÓN SUCIA  (clase EstudianteData) ---
+  Alumna        : Ana Martínez
+  strCarnet     : 2021-1035
+  _intEdad      : 20 años
+  bMatriculada  : True
+  Promedio      : 86.25
+
+--- VERSIÓN LIMPIA (clase Estudiante)    ---
+  Alumna       : Ana Martínez
+  Carnet       : 2021-1035
+  Edad         : 20 años
+  Matriculada  : True
+  Promedio     : 86.25
+
+>> REGLA APLICADA: los miembros no llevan m_ ni húngaro; el nombre dice QUÉ guarda, no de qué tipo es.
+
+==================================================
+ DEMO 2: ASIGNACIONES MENTALES
+==================================================
+--- VERSIÓN SUCIA  (clase Calculos) ---
+  Resultado: 78.50 | Estado: Aprobado
+
+--- VERSIÓN LIMPIA (clase CalculadoraAcademica) ---
+  Promedio final: 78.50 | Estado académico: Aprobado
+
+>> REGLA APLICADA: evite asignaciones mentales: n, s, m, p, r, v obligan a traducir; notas, sumaNotas y promedio no.
+
+==================================================
+ DEMO 3: NOMBRES DE CLASES
+==================================================
+--- VERSIÓN SUCIA  (Data, MgrNotas, EstudianteInfo2, ProcesaCosas) ---
+  Luis Pérez: promedio 77.00 | Aprobado
+  ¿Data de qué? ¿Mgr de qué? ¿Info2 de qué? Hay que adivinar.
+
+--- VERSIÓN LIMPIA (Estudiante, RegistroNotas, BoletinCalificaciones) ---
+  Boletín de Luis Pérez
+  Promedio: 77.00 | Estado: Aprobado
+
+>> REGLA APLICADA: las clases son sustantivos del dominio; evite Data, Info, Manager y números que no dicen nada.
+
+==================================================
+ DEMO 4: NOMBRES DE MÉTODOS
+==================================================
+--- VERSIÓN SUCIA  (clase Operaciones) ---
+  r = operaciones.Hacer();      // ¿qué devuelve?
+  Boletín: promedio 75.00 | ¿Aprobado? True
+  operaciones.Procesar() devuelve 3 elementos
+
+--- VERSIÓN LIMPIA (clase RegistroAcademico) ---
+  promedio = registro.CalcularPromedio();
+  Boletín: promedio 75.00 | ¿Curso aprobado? True
+  registro.ObtenerNotasAprobadas() devuelve 3 notas aprobadas
+
+>> REGLA APLICADA: los métodos son frases verbales: CalcularPromedio y ObtenerNotasAprobadas se explican solos; Hacer y Procesar no.
+
+==================================================
+ DEMO 5: NO EXCEDER EL ATRACTIVO
+==================================================
+--- VERSIÓN SUCIA  (clase NinjaDeNotas) ---
+  ninja.MagiaNegra();        // ¿promedio? ¿aleatorio?
+  ninja.KameHameHa(1);       // ¿borra? ¿ataca?
+  Notas actuales: 80, 95 | Promedio 87.50
+  ninja.Chiripiorca();       // tras ejecutarla...
+  Notas actuales:  | Promedio 0.00
+  ninja.HolyHandGrenade();   // ¿qué habrá hecho?
+  Notas actuales: 80, 65, 95 | Promedio 80.00
+
+--- VERSIÓN LIMPIA (clase RegistroEscolar) ---
+  registro.QuitarNotaEn(1);
+  Notas actuales: 80, 95 | Promedio 87.50
+  registro.VaciarRegistro();
+  Notas actuales:  | Promedio 0.00
+  registro.RestablecerRegistro();
+  Notas actuales: 80, 65, 95 | Promedio 80.00
+
+>> REGLA APLICADA: no sea gracioso: MagiaNegra es CalcularPromedio, Chiripiorca es VaciarRegistro y HolyHandGrenade es RestablecerRegistro.
+
+==================================================
+ DEMO 6: ABREVIATURAS Y SIMETRÍAS
+==================================================
+--- VERSIÓN SUCIA  (clase RegNotasMngr) ---
+  Estudiante inscrito | Notas: 2 | Prom: 85.00
+  ¿Reg? ¿Mngr? ¿Agr? ¿Rem? ¿Desc? El lector debe descifrar cada una.
+
+--- VERSIÓN LIMPIA (clase ControlDeNotas) ---
+  Estudiante inscrito | Notas registradas: 2 | Promedio: 85.00
+  Estudiante inscrito | Notas registradas: 1 | Promedio: 90.00
+  Estudiante no inscrito | Notas registradas: 1 | Promedio: 90.00
+
+>> REGLA APLICADA: no abrevie y use pares simétricos: Agregar/Quitar, Inscribir/Retirar; una sola palabra por concepto.
+
+==================================================
+ FIN: el comportamiento es idéntico en las dos
+ versiones; la diferencia está en los nombres.
+==================================================
